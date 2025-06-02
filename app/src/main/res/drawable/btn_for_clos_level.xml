@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Background layer with a very dark, desaturated gradient -->
     <item>
         <shape android:shape="rectangle">
             <gradient
@@ -11,7 +10,6 @@
         </shape>
     </item>
 
-    <!-- Inner border layer -->
     <item android:bottom="4dp" android:left="4dp" android:right="4dp" android:top="4dp">
         <shape android:shape="rectangle">
             <solid android:color="#657365" />
@@ -22,7 +20,6 @@
         </shape>
     </item>
 
-    <!-- Outer border layer for the "fence" effect -->
     <item>
         <shape android:shape="rectangle">
             <corners android:radius="12dp" />
@@ -34,7 +31,6 @@
         </shape>
     </item>
 
-    <!-- Diagonal overlay to indicate "locked" -->
     <item>
         <shape android:shape="rectangle">
             <gradient
@@ -45,7 +41,7 @@
         </shape>
     </item>
 
-    <!-- Red cross overlay to indicate "locked" -->
+
     <item android:gravity="center">
         <rotate
             android:fromDegrees="45"
