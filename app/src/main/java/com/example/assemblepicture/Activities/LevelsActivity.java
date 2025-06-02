@@ -33,7 +33,7 @@ public class LevelsActivity extends AppCompatActivity {
         theme = intent.getStringExtra("theme");
         levelsCount = intent.getIntExtra("levelsCount", 1);
 
-        // Загружаем прогресс для текущей темы
+        
         SharedPreferences prefs = getSharedPreferences("GamePrefs", MODE_PRIVATE);
         currentLevel = prefs.getInt("currentLevel_" + theme, 1);
 
