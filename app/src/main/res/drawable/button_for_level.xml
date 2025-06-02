@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Background layer with gradient -->
+
     <item>
         <shape android:shape="rectangle">
             <gradient
@@ -11,7 +11,7 @@
         </shape>
     </item>
 
-    <!-- Inner border layer -->
+   
     <item android:bottom="4dp" android:left="4dp" android:right="4dp" android:top="4dp">
         <shape android:shape="rectangle">
             <solid android:color="#E0E8E1" />
@@ -22,7 +22,7 @@
         </shape>
     </item>
 
-    <!-- Outer border layer for the "fence" effect -->
+
     <item>
         <shape android:shape="rectangle">
             <corners android:radius="12dp" />
