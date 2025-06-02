@@ -50,9 +50,9 @@ public class GameActivity extends AppCompatActivity {
     private TextView level_text;
     private int levelNumber;
     private String levelPath;
-    private int rowDifficulty;    // формат: 1x, 2x или 3x, где x - размер сетки
-    private int difficultyType;   // 1, 2 или 3
-    private int gridSize;         // 3, 4 или 5
+    private int rowDifficulty;    
+    private int difficultyType;   
+    private int gridSize;         
     private ArrayList<Integer> rotations = new ArrayList<>();
     private ArrayList<Integer> imageTags = new ArrayList<>();
     private ImageView firstSelected = null;
@@ -108,15 +108,15 @@ public class GameActivity extends AppCompatActivity {
             public void onResponse(Call<LevelConfig> call, Response<LevelConfig> response) {
                 if (response.isSuccessful() && response.body() != null) {
                     rowDifficulty = response.body().getDifficulty();
-                    difficultyType = rowDifficulty / 10; // 1, 2 или 3
-                    gridSize = rowDifficulty % 10;       // 3, 4 или 5
+                    difficultyType = rowDifficulty / 10; 
+                    gridSize = rowDifficulty % 10;       
 
                     loadBackground();
 
                     if (difficultyType == 1) {
-                        loadImages(gridSize);         // просто поворот по тапу
+                        loadImages(gridSize);         
                     } else {
-                        loadShuffleLevel(gridSize);  // тасовка + возможно поворот
+                        loadShuffleLevel(gridSize);  
                     }
                 } else {
                     showError();
@@ -405,8 +405,8 @@ public class GameActivity extends AppCompatActivity {
             public void onResponse(Call<LevelConfig> call, Response<LevelConfig> response) {
                 if (response.isSuccessful() && response.body() != null) {
                     rowDifficulty = response.body().getDifficulty();
-                    difficultyType = rowDifficulty / 10; // 1, 2 или 3
-                    gridSize = rowDifficulty % 10;       // 3, 4 или 5
+                    difficultyType = rowDifficulty / 10; 
+                    gridSize = rowDifficulty % 10;       
                     loadBackground();
                     loadPassImages(gridSize);
                 } else {
