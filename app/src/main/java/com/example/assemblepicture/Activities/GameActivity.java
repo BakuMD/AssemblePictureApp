@@ -24,7 +24,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.bumptech.glide.Glide;
 import com.example.assemblepicture.API.LevelApiService;
 import com.example.assemblepicture.API.LevelConfig;
-import com.example.assemblepicture.MainActivity;
 import com.example.assemblepicture.R;
 
 import java.io.InputStream;

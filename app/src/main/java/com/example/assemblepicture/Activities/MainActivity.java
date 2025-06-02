@@ -1,4 +1,4 @@
-package com.example.assemblepicture;
+package com.example.assemblepicture.Activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.assemblepicture.API.ApiService;
 import com.example.assemblepicture.API.LevelsResponse;
-import com.example.assemblepicture.Activities.LevelsActivity;
+import com.example.assemblepicture.R;
 
 import retrofit2.Call;
 import retrofit2.Callback;
