@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background layer with gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#A5B6A7"
+                android:endColor="#8D9E90"
+                android:angle="90" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+
+    <!-- Inner border layer -->
+    <item android:bottom="4dp" android:left="4dp" android:right="4dp" android:top="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#E0E8E1" />
+            <corners android:radius="8dp" />
+            <stroke
+                android:width="2dp"
+                android:color="#6A7A6C" />
+        </shape>
+    </item>
+
+    <!-- Outer border layer for the "fence" effect -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp" />
+            <stroke
+                android:width="3dp"
+                android:color="#4F5A51"
+                android:dashWidth="6dp"
+                android:dashGap="3dp" />
+        </shape>
+    </item>
+</layer-list>

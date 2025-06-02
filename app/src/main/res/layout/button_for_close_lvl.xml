@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:padding="23dp"
+    android:textColor="#000000"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:backgroundTint="@null"
+    android:background="@drawable/btn_for_clos_level" />

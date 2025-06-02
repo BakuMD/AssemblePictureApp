@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/mainwindow">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/center_a"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_btn"
+        android:backgroundTint="#DCDACE"
+        android:text="Начать"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:layout_above="@id/center_a"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35sp"
+        android:paddingLeft="35sp"
+        android:paddingRight="35sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_btn"
+        android:text="Настройки"
+        android:textColor="@color/black"
+        android:backgroundTint="#DCDACE"
+        android:layout_below="@id/start_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-25sp"
+        android:textSize="35sp"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp" />
+
+</RelativeLayout>
