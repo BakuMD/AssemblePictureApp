@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        // Загружаем сохраненную тему
+        
         SharedPreferences prefs = getSharedPreferences("GamePrefs", MODE_PRIVATE);
         theme = prefs.getString("selectedTheme", "cars");
         updateOptions();
